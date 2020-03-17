@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#122279A5"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,7 +19,7 @@
         android:layout_marginRight="8dp"
         android:soundEffectsEnabled="false"
         android:text="Temp Converter"
-        android:textColor="#2279A5"
+        android:textColor="#4E4E4E"
         android:textSize="50sp"
         app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +34,7 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="108dp"
         android:text="Fahrenheit  :"
-        android:textColor="#2279A5"
+        android:textColor="#5A5A5A"
         android:textSize="30sp"
         app:fontFamily="sans-serif-thin"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +51,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:ems="5"
+        android:imeOptions="actionDone"
         android:inputType="number"
         android:textColor="#2279A5"
         android:textColorLink="#0089C9"
@@ -70,10 +72,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#2C2279A5"
+        android:background="#FFFFFF"
         android:onClick="convert"
         android:text="Convert"
-        android:textColor="#2279A5"
+        android:textColor="#888888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
@@ -92,7 +94,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Celcius  :"
-        android:textColor="#2279A5"
+        android:textColor="#686868"
         android:textSize="30sp"
         app:fontFamily="sans-serif-thin"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,6 +126,7 @@
         app:layout_constraintVertical_bias="0.22" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -149,5 +152,26 @@
             android:text="Celsius to Fahrenheit" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="128dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:onClick="colorPressed"
+        android:text="Change Color"
+        android:textColor="#BE362F2F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.448" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
